@@ -1,0 +1,1 @@
+-w -erf D:/Dokumenty/Pulpit/TutorVHDL/compile/TutorVHDL.erf -d D:/Dokumenty/Pulpit/TutorVHDL/compile -s D:/Dokumenty/Pulpit/TutorVHDL/library.cfg -j D:/Dokumenty/Pulpit/TutorVHDL/projlib.cfg -work TutorVHDL -dbg -e 100 -work TutorVHDL_post_synthesis -2002 D:/Dokumenty/Pulpit/TutorVHDL/synthesis/Top.vhd 

@@ -1,0 +1,317 @@
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/Dokumenty/Pulpit/TutorVHDL/synthesis/run_vivado.tcl
+# create_project -force Top {D:\Dokumenty\Pulpit\TutorVHDL\synthesis} -part 7a100tcsg324-1
+# add_files -norecurse {D:/Dokumenty/Pulpit/TutorVHDL/src/TutorVHDL.vhd}
+# add_files -norecurse {D:/Dokumenty/Pulpit/TutorVHDL/compile/Top.vhd}
+# add_files -norecurse {D:/Dokumenty/Pulpit/TutorVHDL/src/Prescaler.vhd}
+# add_files -norecurse {D:/Dokumenty/Pulpit/TutorVHDL/src/Debouncer.vhd}
+# set_property top Top [current_fileset]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+# synth_design -top Top -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Command: synth_design -top Top -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -fanout_limit 10000 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12640 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 346.957 ; gain = 102.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [D:/Dokumenty/Pulpit/TutorVHDL/compile/Top.vhd:41]
+INFO: [Synth 8-3491] module 'Prescaler' declared at 'D:/Dokumenty/Pulpit/TutorVHDL/src/Prescaler.vhd:29' bound to instance 'U1' of component 'Prescaler' [D:/Dokumenty/Pulpit/TutorVHDL/compile/Top.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'Prescaler' [D:/Dokumenty/Pulpit/TutorVHDL/src/Prescaler.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Prescaler' (1#1) [D:/Dokumenty/Pulpit/TutorVHDL/src/Prescaler.vhd:40]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'D:/Dokumenty/Pulpit/TutorVHDL/src/Debouncer.vhd:23' bound to instance 'U2' of component 'Debouncer' [D:/Dokumenty/Pulpit/TutorVHDL/compile/Top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [D:/Dokumenty/Pulpit/TutorVHDL/src/Debouncer.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [D:/Dokumenty/Pulpit/TutorVHDL/src/Debouncer.vhd:35]
+INFO: [Synth 8-3491] module 'TutorVHDL' declared at 'D:/Dokumenty/Pulpit/TutorVHDL/src/TutorVHDL.vhd:20' bound to instance 'U3' of component 'TutorVHDL' [D:/Dokumenty/Pulpit/TutorVHDL/compile/Top.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'TutorVHDL' [D:/Dokumenty/Pulpit/TutorVHDL/src/TutorVHDL.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'TutorVHDL' (3#1) [D:/Dokumenty/Pulpit/TutorVHDL/src/TutorVHDL.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Top' (4#1) [D:/Dokumenty/Pulpit/TutorVHDL/compile/Top.vhd:41]
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[3]
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[2]
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[1]
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 399.258 ; gain = 154.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 399.258 ; gain = 154.598
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 725.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 725.316 ; gain = 480.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 725.316 ; gain = 480.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 725.316 ; gain = 480.656
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element DIVIDER_reg was removed.  [D:/Dokumenty/Pulpit/TutorVHDL/src/Prescaler.vhd:50]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TutorVHDL'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00001 |                              000
+                      s1 |                            00010 |                              001
+                      s2 |                            00100 |                              010
+                      s3 |                            01000 |                              011
+                      s4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'TutorVHDL'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 725.316 ; gain = 480.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module TutorVHDL 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element U1/DIVIDER_reg was removed.  [D:/Dokumenty/Pulpit/TutorVHDL/src/Prescaler.vhd:50]
+WARNING: [Synth 8-3917] design Top has port Q[2] driven by constant 0
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[3]
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[2]
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[1]
+WARNING: [Synth 8-3331] design Top has unconnected port PASS_LEDS[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 725.316 ; gain = 480.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 732.914 ; gain = 488.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 732.914 ; gain = 488.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT2   |    33|
+|4     |LUT3   |     1|
+|5     |LUT4   |     8|
+|6     |LUT5   |     1|
+|7     |LUT6   |     5|
+|8     |FDCE   |    36|
+|9     |FDPE   |     1|
+|10    |IBUF   |     8|
+|11    |OBUF   |     5|
+|12    |OBUFT  |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   110|
+|2     |  U1     |Prescaler |    72|
+|3     |  U2     |Debouncer |     7|
+|4     |  U3     |TutorVHDL |    13|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 752.484 ; gain = 181.766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 752.484 ; gain = 507.824
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 754.926 ; gain = 523.004
+# report_utilization -file {Top_utilization_synth.rpt}
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 754.926 ; gain = 0.000
+# write_edf -force {Top.edn}
+D:/Dokumenty/Pulpit/TutorVHDL/synthesis/Top.edn
+# write_vhdl -force {Top.vhd}
+# write_xdc -force {Top.xdc}
+# write_checkpoint -force Top_synth.dcp
+INFO: [Common 17-1381] The checkpoint 'D:/Dokumenty/Pulpit/TutorVHDL/synthesis/Top_synth.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 22 22:43:48 2019...

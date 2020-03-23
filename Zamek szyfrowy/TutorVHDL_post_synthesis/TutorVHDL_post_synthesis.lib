@@ -1,0 +1,30 @@
+timestamp=1548193433506
+
+[~A]
+ModifyID=54
+Version=74
+
+[debouncer]
+A/structure=*21|./../synthesis/Top.vhd|28|
+
+[prescaler]
+A/structure=*21|./../synthesis/Top.vhd|114|
+
+[top]
+A/structure=*21|./../synthesis/Top.vhd|1201|
+
+[tutorvhdl]
+A/structure=*21|./../synthesis/Top.vhd|1007|
+
+[~MFT]
+0=0|0TutorVHDL_post_synthesis.mgf|686|0
+
+[~U]
+debouncer=Debouncer 11|0*0|
+prescaler=Prescaler 11|0*252|
+top=Top 11|0*458|
+tutorvhdl=TutorVHDL 11|0*686|
+
+
+
+

@@ -1,0 +1,40 @@
+Active-HDL 10.5.217.6767 2019-01-25 19:48:01
+
+Elaboration top modules:
+VHDL Configuration            testbench_for_top
+
+
+-----------------------------------------------------------------------------------------------
+Entity    | Architecture    | Library   | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------
+top_tb    | TB_ARCHITECTURE | tutorvhdl |      | 10.5.217.6767 (Windows) | -dbg
+Top       | Top             | tutorvhdl |      | 10.5.217.6767 (Windows) | -dbg
+Prescaler | Prescaler       | tutorvhdl |      | 10.5.217.6767 (Windows) | -dbg
+Debouncer | Debouncer       | tutorvhdl |      | 10.5.217.6767 (Windows) | -dbg
+TutorVHDL | TutorVHDL       | tutorvhdl |      | 10.5.217.6767 (Windows) | -dbg
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+VHDL Configuration          | Library   | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------
+testbench_for_top           | tutorvhdl |      |                         | <unavailable>
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+VHDL Package                | Library   | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------------
+standard                    | std       |      |                         | <unavailable>
+TEXTIO                      | std       |      |                         | <unavailable>
+std_logic_1164              | ieee      |      |                         | <unavailable>
+std_logic_arith             | ieee      |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED          | ieee      |      |                         | <unavailable>
+STD_LOGIC_SIGNED            | ieee      |      |                         | <unavailable>
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+Library                     | Comment
+-----------------------------------------------------------------------------------------------
+ieee                        | Standard IEEE packages library
+std                         | Standard VHDL library
+tutorvhdl                   | None
+-----------------------------------------------------------------------------------------------

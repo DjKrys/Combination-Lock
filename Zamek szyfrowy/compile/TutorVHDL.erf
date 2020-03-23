@@ -1,0 +1,42 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 17
+UPDATEPROGRESS 35
+WARNING VCP2515 "Undefined module: LUT3 was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 47  33
+WARNING VCP2515 "Undefined module: FDCE was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 62  23
+WARNING VCP2515 "Undefined module: LUT4 was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 86  16
+WARNING VCP2515 "Undefined module: LUT6 was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 187  21
+WARNING VCP2515 "Undefined module: LUT2 was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 245  35
+WARNING VCP2515 "Undefined module: CARRY4 was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 428  100
+WARNING VCP2515 "Undefined module: IBUF was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 735  26
+WARNING VCP2515 "Undefined module: BUFG was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 738  28
+WARNING VCP2515 "Undefined module: OBUF was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 747  22
+WARNING VCP2515 "Undefined module: OBUFT was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 769  19
+WARNING VCP2515 "Undefined module: FDPE was used. Port connection rules will not be checked at such instantiations." "D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v" 900  43
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 36
+UPDATEPROGRESS 38
+UPDATEPROGRESS 40
+UPDATEPROGRESS 41
+UPDATEPROGRESS 43
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+UPDATEPROGRESS 82
+UPDATEPROGRESS 84
+UPDATEPROGRESS 86
+UPDATEPROGRESS 88
+UPDATEPROGRESS 90
+UPDATEPROGRESS 92
+UPDATEPROGRESS 94
+UPDATEPROGRESS 96
+UPDATEPROGRESS 98
+MESSAGE "Unit top modules: Top glbl."
+MESSAGE "$root top modules: Top glbl."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 11 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

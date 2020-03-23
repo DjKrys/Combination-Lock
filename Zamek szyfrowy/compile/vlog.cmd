@@ -1,0 +1,1 @@
+-o D:/Dokumenty/Pulpit/TutorVHDL/compile -lc D:/Dokumenty/Pulpit/TutorVHDL/library.cfg -fl D:/Dokumenty/Pulpit/TutorVHDL/projlib.cfg -pli "D:/Programs/Aldec/bin/systf.dll" -epr D:/Dokumenty/Pulpit/TutorVHDL/compile/TutorVHDL.epr -O2 -sve -msg 5 -sv2k12 -work TutorVHDL_timing D:/Dokumenty/Pulpit/TutorVHDL/implement/Top.v D:/Dokumenty/Pulpit/TutorVHDL/implement/glbl.v 
