@@ -1,2 +1,2 @@
 # Combination-Lock
-![stack Overflow](https://pl.farnell.com/productimages/large/en_GB/2490174-40.jpg)
+![2490174-40](2490174-40.jpg)
